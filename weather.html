@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="weathericon.css">
+    <!--Icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>
+       
+        <i class="large material-icons icon-left">wb_cloudy</i>
+        Weather
+        <i class="large material-icons icon-right">wb_sunny</i> 
+        </h1>    
+    </header>
+    <div class="container">
+        <h2>Check Weather In your own City</h2>
+        <div class="block">
+            <form id="frm1">
+                <div>
+                    <div class="alert" id="alert">City Not Found! 
+                        <i class="large material-icons re">report</i>
+                    </div>
+                    <input type="text" name="t1" id="t1" placeholder="Enter Your City" autocomplete="off" >
+                </div>
+                <div>
+                    <input type="submit" value="Check" id="sub">
+                </div>
+            </form>
+        </div>
+        <div class="city" id="city">
+            <div class="table" id="table"></div> 
+        </div>
+    </div>
+    <footer>Weather Application &copy <p class="ft">Made By: Xfordation</p></footer>
+    <script src="weatherfetch.js"></script>
+    <script src="weatherUI.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.icon-left{
+    color:#eee;
+    margin-right: 10px;
+    background: -webkit-linear-gradient( #30CFD0 , #0084ffb3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.icon-left:hover{
+    background: -webkit-linear-gradient( #0084ffb3  , #30CFD0);
+    background-position: 500px center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: default;
+}
+.icon-right{
+    margin-left: 10px;
+    background: -webkit-linear-gradient( #e4e714 0%, #ff9100 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.icon-right:hover{
+    background: -webkit-linear-gradient( #ff9100 0%, #e4e714 100%);
+    background-position: 500px center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: default;
+}
