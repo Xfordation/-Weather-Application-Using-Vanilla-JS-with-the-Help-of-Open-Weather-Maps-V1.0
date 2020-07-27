@@ -1,146 +1,168 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    outline: none;
-    font-family: 'Poppins';
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins";
 }
-header{
-    background-color: #1c1c1e;
-    color: #fefefe;
-    padding: 10px;
-    border: none;
+header {
+  background-color: #1c1c1e;
+  color: #fefefe;
+  padding: 10px;
+  border: none;
 }
-h1{
-    text-transform: uppercase;
-    font-size: 3rem;
-    text-align: center;
+h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
 }
-.container{
-    width: 40%;
-    padding: 10px;
-    background-color: #1c1c1e;
-    margin: auto;
-    margin-top: 50px;
+.container {
+  width: 40%;
+  padding: 10px;
+  background-color: #1c1c1e;
+  margin: auto;
+  margin-top: 50px;
 }
-h2{
-    text-align: center;
-    color: #fefefe;
-    padding: 10px;
+h2 {
+  text-align: center;
+  color: #fefefe;
+  padding: 10px;
 }
-input[type='text']{
+input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  border: 3px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #fefefe;
+  background-color: #1c1c1e;
+  color: #fefefe;
+  text-transform: uppercase;
+}
+input[type="submit"] {
+  width: 30%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  transition: all 0.5s ease-in-out;
+  color: #00ffff;
+  background-color: #1c1c1e;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+input[type="submit"]:hover {
+  color: rgba(255, 255, 255, 5);
+  box-shadow: 0 6px 15px rgba(9, 255, 255, 0.9);
+  background-color: rgba(2, 255, 255, 0.8);
+}
+.block {
+  background-color: #1c1c1e;
+  padding: 10px;
+}
+.alert {
+  background-color: rgba(255, 0, 0, 0.856);
+  color: #fefefe;
+  padding: 10px;
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  display: none;
+}
+.re {
+  float: right;
+}
+.city {
+  transition: all 2s;
+  padding: 10px;
+  text-align: center;
+}
+.cityname {
+  color: #fefefe;
+  padding: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 12.5px;
+}
+.desc {
+  color: #fefefe;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: -5px;
+}
+.temp {
+  color: #fefefe;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: -5px;
+  text-align: center;
+  margin-left: 15px;
+}
+table {
+  cursor: default;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: left;
+  color: #fefefe;
+  border-collapse: collapse;
+}
+th {
+  text-align: left;
+  font-family: "Raleway";
+  font-size: 15px;
+  text-decoration: none;
+  padding: 10px;
+}
+td {
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+}
+.table {
+  padding: 10px;
+  width: 100%;
+}
+footer {
+  background-color: #1c1c1e;
+  color: #fefefe;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  border: 0px;
+  position: relative;
+  padding: 10px;
+  margin-top: 232.5px;
+}
+.ft {
+  font-family: "Raleway";
+  color: #ddd;
+  padding: 5px;
+  font-size: 15px;
+}
+/*Responsive Layout*/
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  header {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 17px;
+  }
+  .alert {
+    width: 70%;
+  }
+  input[type="text"] {
+    width: 70%;
+  }
+  input[type="submit"] {
     width: 50%;
-    padding: 10px;
-    border:3px solid;
-    border-top:none;
-    border-left: none;
-    border-right: none;
-    border-color: #fefefe;
-    background-color: #1c1c1e;
-    color: #fefefe;
-    text-transform: uppercase;
-}
-input[type='submit']{
-    width: 30%;
-    padding: 10px;
-    margin-top: 20px;
-    margin-left: 20px;
-    transition: all 0.5s ease-in-out;
-    color: #00ffff;
-    background-color: #1c1c1e;
-    border:none;
-    cursor: pointer;
-    text-transform: uppercase;
-
-}
-input[type='submit']:hover{
-    color:rgba(255, 255, 255, 5);
-    box-shadow: 0 6px 15px rgba(9, 255, 255, .9);
-    background-color: rgba(2, 255, 255, .8);
-}
-.block{
-    background-color: #1c1c1e;
-    padding: 10px;
-}
-.alert{
-    background-color: rgba(255, 0, 0, 0.856);
-    color: #fefefe;
-    padding: 10px;
-    width: 50%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 10px;
-    display:none;
-}
-.re{
-    float: right;    
-}
-.city{
-    transition: all 2s;   
-    padding: 10px;
-    text-align: center;
-}
-.cityname{
-  
-    color: #fefefe;
-    padding: 5px;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-top: 12.5px;
-}
-.desc{
-    color: #fefefe;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-top: -5px;
-}
-.temp{
-    color: #fefefe;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-top: -5px;
-    text-align: center;
-    margin-left: 15px;
-}
-table{
-    cursor: default;
-    width: 100%;
-    text-transform: uppercase;
-    text-align: left;
-    color:#fefefe;
-    border-collapse: collapse; 
-}
-th{
-    text-align: left;
-    font-family: 'Raleway';
-    font-size: 15px;
-    text-decoration: none;
-    padding: 10px;
-}
-td{
-    padding: 10px;
-    border-bottom: 2px solid #ddd;
-}
-.table{
-    padding: 10px;
-    width: 100%;
-}
-footer{
-    background-color: #1c1c1e;
-    color: #fefefe;
-    text-align: center;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    border: 0px;
-    position: relative;;
-    padding: 10px;
-    margin-top: 50px;
-}
-.ft{
-    font-family: 'Raleway';
-    color: #ddd;
-    padding: 5px;
-    font-size: 15px;
+  }
 }
